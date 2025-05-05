@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <title>Contact</title>
     </head>
     <body>
@@ -16,14 +19,16 @@
             </ul>
             </div>
         </header>
-            <h2>Blog List</h2>
+        <div class="blog2-style">
+            <div><h2>Blog List</h2></div>
+            <div>
                 <ul>
                     <li><a href="#section1">Post Title 1</a></li>
                     <li><a href="#section2">Post Title 2</a></li>
                     <li><a href="#section3">Post Title 3</a></li>
                 </ul>
-            
-        
+            </div>
+        </div>
         <div class="posts-style" id="section1">
             <h2>Post Title 1</h2>
             <address>By Jone Smith</address>
@@ -69,9 +74,9 @@
         <div>
         <h1>Contact Us</h1>
         <form class="contact-style">
-            <div><label>Your name:</label><input type="text" name="name" required></div>
-            <div><label>Your Email:</label><input type="email" name="email" required>></div>
-            <div><label>Your Message:</label><textarea name="Message" required></textarea></div>
+            <div><label for="name">Your name:</label><input type="text" id="name" name="name" required></div>
+            <div><label for="email">Your Email:</label><input type="email" id="email" name="email" required></div>
+            <div><label for="Message">Your Message:</label><textarea name="Message" id="Message" required></textarea></div>
             <div><input type="submit" value="Send Message"></div>
         </form>
     </div>
@@ -79,11 +84,14 @@
         <h2>Contact Information</h2>
         <div >
         <table class="style-table">
+            <thead>
             <tr>
                 <th>Day</th>
                 <th>Closing Time</th>
                 <th>Opening Time</th>
             </tr>
+        </thead>
+        <tbody>
             <tr>
                 <td>Monday</td>
                 <td>9:00 AM</td>
@@ -99,6 +107,7 @@
                 <td>9:00 AM</td>
                 <td>5:00 PM</td>
             </tr>
+        </tbody>
         </table>
     </div>
         <p>Contact us at <a href="info@myblog.com">info@myblog.com</a></p>
